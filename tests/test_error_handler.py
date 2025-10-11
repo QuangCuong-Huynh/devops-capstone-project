@@ -18,6 +18,8 @@ app.config["TESTING"] = True
 ######################################################################
 # Helper routes to trigger error handlers
 ######################################################################
+
+
 @app.route("/cause_400")
 def cause_400():
     abort(status.HTTP_400_BAD_REQUEST, description="Bad data input")
@@ -52,6 +54,8 @@ def cause_datavalidation():
 ######################################################################
 # Test Suite for Error Handlers
 ######################################################################
+
+
 class TestErrorHandlers(TestCase):
     """Test all error handlers defined in service/error_handlers.py"""
 
@@ -76,6 +80,7 @@ class TestErrorHandlers(TestCase):
     ##################################################################
     # Individual tests
     ##################################################################
+
     def test_bad_request_handler(self):
         """Should return 400 Bad Request JSON"""
         resp = self.client.get("/cause_400")
