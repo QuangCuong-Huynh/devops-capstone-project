@@ -8,11 +8,12 @@ from flask import abort
 from service import app
 from service.models import init_db, DataValidationError
 from service.common import status  # HTTP Status Codes
-
+from service import talisman
 
 DATABASE_URI = os.getenv(
     "DATABASE_URI", "postgresql://postgres:postgres@localhost:5432/postgres"
 )
+app.config["TESTING"] = True
 
 ######################################################################
 # Helper routes to trigger error handlers
@@ -62,6 +63,7 @@ class TestErrorHandlers(TestCase):
         app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URI
         app.logger.setLevel(logging.CRITICAL)
         init_db(app)
+        talisman.force_https = False
 
     def setUp(self):
         """Run before each test"""
