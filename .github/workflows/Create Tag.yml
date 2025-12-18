@@ -28,6 +28,6 @@ jobs:
       - name: Create tag
         uses: Klemensas/action-autotag@stable
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           tag_prefix: "v"
           tag: "${{ steps.read_version.outputs.version }}"
+
