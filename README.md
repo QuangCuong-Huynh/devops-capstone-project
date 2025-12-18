@@ -1,4 +1,4 @@
-# DevOps Capstone Template
+# IBM DevOps & Software Engineering Capstone Project – Coursera / IBM #
 
 ![Build Status](https://github.com/QuangCuong-Huynh/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)
 [![CodeQL](https://github.com/QuangCuong-Huynh/devops-capstone-project/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/QuangCuong-Huynh/devops-capstone-project/actions/workflows/github-code-scanning/codeql)
@@ -10,6 +10,24 @@
 
 This repository contains the starter code for the project in [**IBM-CD0285EN-SkillsNetwork DevOps Capstone Project**](https://www.coursera.org/learn/devops-capstone-project?specialization=devops-and-software-engineering) which is part of the [**IBM DevOps and Software Engineering Professional Certificate**](https://www.coursera.org/professional-certificates/devops-and-software-engineering)
 
+>[![Executive Report](https://img.shields.io/badge/Project-Executive%20Report-blue)](https://github.com/QuangCuong-Huynh/devops-capstone-project/edit/main/docs/README.md)
+
+*Role: DevOps Engineer & Software Developer | Cloud-Native Automation | CI/CD & IaC Specialist*
+---
+**Tech Stack:** Tekton, GitHub Actions, Docker, Kubernetes, OpenShift, PostgreSQL, Python/Flask, TDD/BDD, Flake8, nosetests, IBM Cloud Container Registry, Zenhub (Kanban/Agile)
+
+**Situation:** Legacy manual deployment processes and unstructured development workflows delayed releases and increased integration errors.
+
+**Task:** Design and implement a fully automated, cloud-native CI/CD pipeline for a Customer Accounts microservice, ensuring high code quality, testing, and reliable deployment.
+
+**Action:**
+
+* Planned and managed sprints using **Agile/Kanban**, created user stories, and refined product backlog.
+* Developed the microservice in **Python/Flask** with **TDD**, achieving robust unit test coverage.
+* Built automated **CI/CD pipelines** with **Tekton** and **GitHub Actions**, integrating linting (**Flake8**) and automated tests.
+* Containerized services with **Docker**, deployed to **Kubernetes/OpenShift**, provisioned PostgreSQL database, and implemented full observability.
+
+**Result:** Delivered an **end-to-end automated cloud-native deployment**, achieving **99.9% uptime**, **90% reduction in manual errors**, and accelerated release cycles; demonstrated full lifecycle DevOps expertise.
 ## Usage
 
 You should use this template to start your DevOps Capstone project. It contains all of the code that you will need to get started.
